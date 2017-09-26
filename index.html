@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Epicodus Movie Center</title>
+  </head>
+  <style media="screen">
+    body {
+      background-color: #C9E7FF
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to the Epicodus Movie Center!</h1>
+      </div>
+      <h2>Please fill out the form to continue</h2>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="movie">Select the Movie you would like to watch:</label>
+          <select class="form-control" id="movie">
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Select the day you would like to watch the movie:</label>
+          <input type="date" class="form-control "name="date" id="date">
+        </div>
+        <div class="form-group">
+          <label for="time">Select the time you would like to watch the movie:</label>
+          <select class="form-control" id="time">
+          <option value="11">11:00AM</option>
+          <option value="1230">12:30PM</option>
+          <option value="1">1:00PM</option>
+          <option value="230">2:30PM</option>
+          <option value="8">8:00PM</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="age">Please input your age:</label>
+          <input type="number" class="form-control "name="age" id="age">
+        </div>
+        <button type="submit" name="btn" class="btn btn-primary">Select your movie!</button>
+      </form>
+      <div id="resultBox">
+        <h2>Here's how much your ticket will cost:</h2>
+        <br>
+        <div id="price">
+          <h4></h4>
+          <h2></h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
